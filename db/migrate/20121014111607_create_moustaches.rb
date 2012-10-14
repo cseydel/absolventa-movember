@@ -1,7 +1,7 @@
 class CreateMoustaches < ActiveRecord::Migration
   def change
     create_table :moustaches do |t|
-      t.string :title
+      t.string :name
       t.text :description
 
       t.timestamps
