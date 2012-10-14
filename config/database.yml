@@ -3,7 +3,7 @@ development:
   encoding: unicode
   database: movember_development
   pool: 5
-  username: felixmohnert
+  username: christophseydel
   password:
 
 production:
@@ -11,5 +11,5 @@ production:
   encoding: unicode
   database: movember_development
   pool: 5
-  username: felixmohnert
+  username: christophseydel
   password:
