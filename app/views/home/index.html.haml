@@ -1,10 +1,11 @@
 %h1 ABSOLVENTA Movember 2012
 %p Vote for Mens Health
 
-%ul.thumbnails
-  - @bros.each do |bro|
-    %li.span2
-      = link_to image_tag(bro.avatar.url(:thumb), :class => 'img-rounded'), :controller => "bros", :action => "show", :id => bro.id
+.span6
+  %ul.thumbnails
+    - @bros.each do |bro|
+      %li.span2
+        = link_to image_tag(bro.avatar.url(:thumb), :class => 'img-rounded'), :controller => "bros", :action => "show", :id => bro.id
 
 .span3
   .well.sidebar-nav
