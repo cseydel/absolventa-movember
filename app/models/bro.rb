@@ -10,4 +10,6 @@ class Bro < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :avatar
   has_attached_file :avatar, :styles => { :medium => "400x400>", :thumb => "200x200>" }
 
+  has_many :votes
+
 end

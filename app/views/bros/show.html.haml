@@ -1,4 +1,14 @@
-detail:
-
-= @bro.inspect
 = image_tag @bro.avatar.url(:medium)
+
+
+- @moustaches.each do |moustache|
+  = moustache.name
+
+  Vote Count:
+  = moustache.vote_count
+
+  %br
+
+
+%input MONEE
+%button VOTEZ
