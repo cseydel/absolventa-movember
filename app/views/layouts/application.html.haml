@@ -46,12 +46,12 @@
             = yield
           .span3
             .well.sidebar-nav
-              %h3 MoBros
+              %h3 Links
               %ul.nav.nav-list
                 %li.nav-header Absolventa
-                - @bros.each do |bro|
-                  %li
-                    = link_to bro.email, :controller => "bros", :action => "show", :id => bro.id
+                %li= link_to "Movember-Team-Site", "http://de.movember.com/team/458709"
+                %li= link_to "Facebook", "https://www.facebook.com/Jobboerse.Absolventa"
+                %li= link_to "Twitter", "https://twitter.com/ABSOLVENTA"
             / /.well
           / /span
         / /row
