@@ -13,4 +13,4 @@
       %li.nav-header Absolventa
       - @bros.each do |bro|
         %li
-          = link_to bro.email, :controller => "bros", :action => "show", :id => bro.id
+          = link_to "#{bro.firstname} #{bro.lastname}", :controller => "bros", :action => "show", :id => bro.id
