@@ -1,5 +1,9 @@
 erb_config = ERB.new(File.read("#{Rails.root.to_s}/config/config.yml")).result
+<<<<<<< HEAD
 APP_CONFIG = (YAML.load(erb_config)[Rails.env] rescue {}).symbolize_keys
+=======
+APP_CONFIG = (YAML.load(erb_config)[Rails.env] rescue Hash.new).symbolize_keys
+>>>>>>> e41637484c7aad6fb6fe609f9cc38ba73f9cc3ff
 
 if Rails.env.production? or Rails.env.staging?
   ActionMailer::Base.smtp_settings = {
