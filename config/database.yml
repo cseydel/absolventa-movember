@@ -1,6 +1,6 @@
 development:
   adapter: sqlite3
-  database: movember_development
+  database: db/movember_development.sqlite3
 
 production:
   adapter: postgresql
