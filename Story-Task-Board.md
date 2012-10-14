@@ -1,40 +1,19 @@
-Story:
+Story
+===========
 
-1 As a user I want to be able to register on the website
-  - Registerpage
-    - Usermodel
-  - File Upload
-    - Images
-  - Link to MOvemberprofile
+As a user I want to be able to register on the website
+------------------------------------------------------
 
-  Tasks:
-    - Controller/View/Model
-    - Find a Gem on how to register users
+Tasks:
+  1. Use a authentification gem to enable the register process
+  2. Use a gem to upload images
+  3. Create profile page to edit/upload changes
 
+As a user I want to be able to see an overview of all Bros
+----------------------------------------------------------
 
+As a user I want to be able to vote on Bros Moustaches with a certain money value
+---------------------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-2. As a user I want to be able to see an overview of all Bros
-   - See all bros
-     - Model Bro
-     - Index Controller
-     - Index View
-
-     ? How to create Bros?
-
-   - See all moustaches connected to Bro
-
-2. As a user I want to be able to vote on Bros Moustaches with a certain money value
-3. As a user I want to see an overview of all donation values
+As a user I want to see an overview of all donation values
+----------------------------------------------------------
