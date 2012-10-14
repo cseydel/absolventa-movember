@@ -7,6 +7,7 @@ gem "haml-rails"
 gem "paperclip", "~> 3.0"
 gem 'devise'
 gem 'sass'
+gem 'sendgrid'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
