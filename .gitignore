@@ -7,20 +7,4 @@ tmp/**/*
 public/system/**/*
 config/database.yml
 vendor/bin/wkhtmltopdf-osx
-
-<<<<<<< HEAD
-# Ignore bundler config
-/.bundle
-
-# Ignore the default SQLite database.
-/db/*.sqlite3
-
-# Ignore all logfiles and tempfiles.
-/log/*.log
-/tmp
 .idea
-=======
-# ignore simplecov generated files
-coverage/**/*
-coverage/
->>>>>>> added .gitignore
