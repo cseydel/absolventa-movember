@@ -2,8 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
-gem "twitter-bootstrap-rails"
-gem "haml-rails"
+gem 'twitter-bootstrap-rails'
+gem 'haml-rails'
+gem 'sass'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -13,6 +14,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'devise'
 
 group :production do
   gem 'pg'
