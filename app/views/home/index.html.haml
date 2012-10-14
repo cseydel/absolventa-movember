@@ -4,4 +4,13 @@
 %ul
   - @bros.each do |bro|
     %li
-      = link_to image_tag(bro.avatar.url(:thumb)), :controller => "bros", :action => "show", :id => bro.id
+      = link_to image_tag(bro.avatar.url(:thumb), :class => 'img-polaroid'), :controller => "bros", :action => "show", :id => bro.id
+
+.span3
+  .well.sidebar-nav
+    %h3 MoBros
+    %ul.nav.nav-list
+      %li.nav-header Absolventa
+      - @bros.each do |bro|
+        %li
+          = link_to bro.email, :controller => "bros", :action => "show", :id => bro.id
