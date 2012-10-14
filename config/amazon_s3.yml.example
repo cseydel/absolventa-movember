@@ -1,0 +1,27 @@
+development:
+  bucket_name: bucked_name-development
+  access_key_id: ACCESS_KEY
+  secret_access_key: ACCESS_SECRET
+  persistent: false
+  cloudfront_domain: CLOUDFRONT_KEY.cloudfront.net
+
+test:
+  bucket_name: bucked_name-test
+  access_key_id: ACCESS_KEY
+  secret_access_key: ACCESS_SECRET
+  persistent: false
+  cloudfront_domain: CLOUDFRONT_KEY.cloudfront.net
+
+staging:
+  bucket_name: bucked_name-development
+  access_key_id: ACCESS_KEY
+  secret_access_key: ACCESS_SECRET
+  persistent: false
+  cloudfront_domain: CLOUDFRONT_KEY.cloudfront.net
+
+production:
+  bucket_name: bucked_name-production
+  access_key_id: ACCESS_KEY # real production key is set via config var
+  secret_access_key: ACCESS_SECRET # real production key is set via config var
+  persistent: false
+  cloudfront_domain: CLOUDFRONT_KEY.cloudfront.net
