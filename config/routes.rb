@@ -3,7 +3,7 @@ Movember::Application.routes.draw do
   root :to => 'home#index'
   devise_for :bros
 
-  match '/bro/:id' => 'bro#show'
+  match '/bros/:id' => 'bros#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

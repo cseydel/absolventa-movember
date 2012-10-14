@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121014122937) do
+ActiveRecord::Schema.define(:version => 20121014142742) do
 
   create_table "bros", :force => true do |t|
     t.string   "firstname"
@@ -28,14 +28,20 @@ ActiveRecord::Schema.define(:version => 20121014122937) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   add_index "bros", ["email"], :name => "index_bros_on_email", :unique => true
   add_index "bros", ["reset_password_token"], :name => "index_bros_on_reset_password_token", :unique => true
 
   create_table "moustaches", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end

@@ -4,4 +4,4 @@
 %ul
   - @bros.each do |bro|
     %li
-      = link_to bro.email, :controller => "bro", :action => "show", :id => bro.id
+      = link_to bro.email, :controller => "bros", :action => "show", :id => bro.id

@@ -1,15 +1,4 @@
-<p id="notice"><%= notice %></p>
+detail:
 
-<p>
-  <b>Firstname:</b>
-  <%= @bro.firstname %>
-</p>
-
-<p>
-  <b>Lastname:</b>
-  <%= @bro.lastname %>
-</p>
-
-
-<%= link_to 'Edit', edit_bro_path(@bro) %> |
-<%= link_to 'Back', bros_path %>
+= @bro.inspect
+= image_tag @bro.avatar.url
