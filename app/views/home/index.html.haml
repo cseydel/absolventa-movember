@@ -4,6 +4,4 @@
 %ul
   - @bros.each do |bro|
     %li
-      = link_to bro.email, :controller => "bros", :action => "show", :id => bro.id
-
-      = image_tag bro.avatar.url(:thumb)
+      = link_to image_tag(bro.avatar.url(:thumb)), :controller => "bros", :action => "show", :id => bro.id

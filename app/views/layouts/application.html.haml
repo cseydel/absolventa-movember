@@ -49,9 +49,9 @@
               %h3 MoBros
               %ul.nav.nav-list
                 %li.nav-header Absolventa
-                %li= link_to "Link1", "/path1"
-                %li= link_to "Link2", "/path2"
-                %li= link_to "Link3", "/path3"
+                - @bros.each do |bro|
+                  %li
+                    = link_to bro.email, :controller => "bros", :action => "show", :id => bro.id
             / /.well
           / /span
         / /row
