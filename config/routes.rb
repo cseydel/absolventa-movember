@@ -1,10 +1,11 @@
 Movember::Application.routes.draw do
 
   root :to => 'home#index'
-  devise_for :bros
+  devise_for :bros #, :controllers => { :registrations => "devise/registrations#edit" }
 
   devise_scope :bros do
     delete "sign_out", :to => "devise/sessions#destroy"
+    get 'edit' => 'devise/registrations#edit', :as => :edit_bro
   end
 
   match '/bros/:id' => 'bros#show'

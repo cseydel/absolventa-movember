@@ -1,14 +1,24 @@
-= image_tag @bro.avatar.url(:medium)
-
-
-- @moustaches.each do |moustache|
-  = moustache.name
-
-  Vote Count:
-  = moustache.vote_count
-
-  %br
-
-
-%input MONEE
-%button VOTEZ
+.container-fluid
+  .row-fluid
+    .span4
+      = image_tag @bro.avatar.url(:medium)
+    .span7.well
+      - @moustaches.each do |moustache|
+        .progress
+          .bar{:style => 'width: 25%'}
+            = moustache.name
+            = moustache.vote_count
+  .row-fluid
+    .span4
+    .span7
+      .btn-group.pagination-centered
+        %button.btn.btn-large#one_euro_vote
+          1 €
+        %button.btn.btn-large#five_euro_vote
+          5 €
+        %button.btn.btn-large#ten_euro_vote
+          10 €
+        %button.btn.btn-large#twenty_euro_vote
+          20 €
+        %button.btn.btn-large#fifty_euro_vote
+          50 €
