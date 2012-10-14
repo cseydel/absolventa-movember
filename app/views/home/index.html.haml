@@ -5,3 +5,5 @@
   - @bros.each do |bro|
     %li
       = link_to bro.email, :controller => "bros", :action => "show", :id => bro.id
+
+      = image_tag bro.avatar.url(:thumb)
