@@ -33,9 +33,10 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand{:href => "#"} Absolventa Movember
+          .brand Absolventa Movember
           .container.nav-collapse
             %ul.nav
+              %li= link_to "Home", "/"
               %li= link_to "Login", "/path1"
               %li= link_to "Impressum", "/path2"
           / /.nav-collapse
@@ -46,9 +47,9 @@
             = yield
           .span3
             .well.sidebar-nav
-              %h3 MoBros & MoSis
+              %h3 MoBros
               %ul.nav.nav-list
-                %li.nav-header Übersicht
+                %li.nav-header Absolventa
                 %li= link_to "Link1", "/path1"
                 %li= link_to "Link2", "/path2"
                 %li= link_to "Link3", "/path3"
