@@ -1,11 +1,15 @@
 development:
-  adapter: sqlite3
-  database: db/movember_development.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: movember_development
+  pool: 5
+  username: christophseydel
+  password:
 
 production:
   adapter: postgresql
   encoding: unicode
   database: movember_development
   pool: 5
-  username: felixmohnert
+  username: christophseydel
   password:
