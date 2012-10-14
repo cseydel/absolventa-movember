@@ -1,0 +1,32 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: absolventa_development
+  pool: 5
+  username: christophseydel
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: absolventa_test
+  min_messages: WARNING
+  pool: 5
+  username: christophseydel
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: absolventa_production
+  pool: 5
+  username: christophseydel
+  password:
+
+staging:
+  adapter: postgresql
+  encoding: unicode
+  database: absolventa_development
+  pool: 5
+  username: christophseydel
+  password:

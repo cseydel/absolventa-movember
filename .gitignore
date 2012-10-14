@@ -6,8 +6,4 @@ tmp/**/*
 .DS_Store
 public/system/**/*
 config/database.yml
-vendor/bin/wkhtmltopdf-osx
-
-# ignore simplecov generated files
-coverage/**/*
-coverage/
+.idea

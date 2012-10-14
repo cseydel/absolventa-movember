@@ -1,0 +1,23 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: <%= ENV['USER'] %>
+  password:
+
+development:
+  <<: *defaults
+  database: absolventa_development
+
+test:
+  <<: *defaults
+  database: absolventa_test
+  min_messages: WARNING
+
+production:
+  <<: *defaults
+  database: absolventa_production
+
+staging:
+  <<: *defaults
+  database: absolventa_development
