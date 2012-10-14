@@ -2,3 +2,9 @@ defaults: &defaults
   force_ssl_redirects: false
   development_recipient: <%= case ENV['USER']; when 'ivanvogel' then 'ivan.vogel'; when 'daniel' then 'daniel.schoppmann'; when 'christophseydel' then 'christoph.seydel'; when 'felixmohnert' then 'felix.mohnert'; when 'carstenzimmermann' then 'carsten.zimmermann'; else 'daniel.schoppmann'; end %>@absolventa.de
   host: absolventa-movember.dev
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
