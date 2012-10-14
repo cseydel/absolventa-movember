@@ -17,6 +17,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'devise'
+gem 'bcrypt-ruby'
 
 group :production do
   gem 'pg'

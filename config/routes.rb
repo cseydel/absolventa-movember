@@ -1,10 +1,9 @@
 Movember::Application.routes.draw do
-  resources :moustaches
-
-  resources :bros
 
   root :to => 'home#index'
-  get "home/index"
+  devise_for :bros
+
+  match '/bro/:id' => 'bro#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

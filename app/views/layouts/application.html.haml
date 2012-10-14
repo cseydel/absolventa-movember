@@ -36,12 +36,17 @@
           .brand Absolventa Movember
           .container.nav-collapse
             %ul.nav
-              %li= link_to "Home", "/"
-              %li= link_to "Login", "/path1"
-              %li= link_to "Impressum", "/path2"
+              %li= link_to "Sign In", "/bros/sign_in"
+              %li= link_to "Sign Up", "/bros/sign_up"
           / /.nav-collapse
     .container
       .content
+        .row
+          .span11
+            %p.notice
+              = notice
+            %p.alert
+              = alert
         .row
           .span9
             = yield
