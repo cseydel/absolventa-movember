@@ -36,18 +36,17 @@
           %a.brand{:href => "#"} Movember
           .container.nav-collapse
             %ul.nav
-              %li= link_to "Link1", "/path1"
-              %li= link_to "Link2", "/path2"
-              %li= link_to "Link3", "/path3"
+              %li= link_to "Sign In", "/bros/sign_in"
+              %li= link_to "Sign Up", "/bros/sign_up"
           / /.nav-collapse
     .container
       .content
         .row
-          p.notice
-            = notice
-          p.alert
-            = alert
-
+          .span11
+            %p.notice
+              = notice
+            %p.alert
+              = alert
         .row
           .span9
             = yield
