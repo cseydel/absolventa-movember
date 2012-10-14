@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+Moustache.create([
+  {name: 'Chevron', description: ''},
+  {name: 'Petit Handlebar', description: ''},
+  {name: 'Horseshoe', description: ''},
+  {name: 'Painter`s Brush', description: ' '},
+  {name: 'The Spitz', description: ''}
+  ])
